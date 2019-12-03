@@ -24,5 +24,5 @@ gulp.task('minify-css', function () {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./'));
 });
