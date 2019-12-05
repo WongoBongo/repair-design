@@ -354,7 +354,7 @@ template {
   color: #fff;
 }
 
-.button_primary {
+.button-primary {
   background-color: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
@@ -397,7 +397,6 @@ template {
 
 .phone {
   color: #E3B873;
-  text-decoration: none;
 }
 
 .contacts__phone {
