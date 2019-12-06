@@ -374,12 +374,13 @@ template {
   background-color: #E3B873;
   -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
           box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-  color: light;
+  color: #fff;
 }
 
 .button_outline {
   border: 1px solid #fff;
   background-color: transparent;
+  color: #fff;
 }
 
 .header {
