@@ -377,6 +377,11 @@ template {
 }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0;
 }
@@ -424,6 +429,7 @@ template {
   background: url("../img/hero/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff;
+  padding-top: 100px;
 }
 
 .hero__instagram {
@@ -431,10 +437,7 @@ template {
   left: 0;
   top: 0;
   max-width: 80px;
-}
-
-.hero__title {
-  margin: 0;
+  height: 100%;
 }
 
 .instagram {
@@ -448,7 +451,6 @@ template {
       -ms-flex-align: center;
           align-items: center;
   background-color: #131313;
-  height: 100vh;
 }
 
 .instagram__link {
