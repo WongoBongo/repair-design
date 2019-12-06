@@ -341,6 +341,22 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Futura Book';
+  src: url("/src/fonts/futura/FuturaBookC.woff") format("woff"), url("/src/fonts/futura/FuturaBookC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: 'Futura Demi';
+  src: url("/src/fonts/futura/FuturaDemiC.woff") format("woff"), url("/src/fonts/futura/FuturaDemiC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
 .container {
   max-width: 1256px;
   margin: auto;
@@ -401,5 +417,10 @@ template {
 
 .contacts__phone {
   margin-right: 45px;
+}
+
+body {
+  font-family: 'Futura Book', sans-sefir;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
