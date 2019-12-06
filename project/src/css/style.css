@@ -358,7 +358,7 @@ template {
 }
 
 .container {
-  max-width: 1256px;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -459,6 +459,11 @@ template {
   color: #E3B873;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
