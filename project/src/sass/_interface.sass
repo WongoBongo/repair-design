@@ -3,11 +3,15 @@
   border-radius: 2px
   border: none
   text-transform: uppercase
-
+  &:hover
+      cursor: pointer
   &_primary
     background-color: $primary
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3)
+    box-shadow: 0px 5px 15px rgba($primary,0.2)
     color: $light
+    transition: box-shadow 0.2s
+    &:hover
+      box-shadow: none
   &_outline
     border: 1px solid $light
     background-color: transparent

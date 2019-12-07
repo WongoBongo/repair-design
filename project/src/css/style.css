@@ -370,11 +370,24 @@ template {
   text-transform: uppercase;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button_primary {
   background-color: #E3B873;
-  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
-          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.button_primary:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .button_outline {
@@ -417,6 +430,8 @@ template {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 
 .nav__item:hover {
@@ -445,8 +460,17 @@ template {
   padding-top: 100px;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+
 .hero__content {
   max-width: 670px;
+  position: relative;
 }
 
 .hero__text {
@@ -488,6 +512,16 @@ template {
   color: #E3B873;
 }
 
+.hero__scroll-down::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: url("/img/hero/arrow-down.svg") no-repeat center;
+  border: 1px solid #E3B873;
+  border-radius: 50%;
+  margin-left: 12px;
+}
+
 .instagram {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -502,11 +536,26 @@ template {
 }
 
 .instagram__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #E3B873;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+  line-height: 0.8;
+}
+
+.instagram__link::after {
+  content: '';
+  width: 51px;
+  height: 1px;
+  background-color: #E3B873;
+  margin-left: 8px;
 }
 
 .title {
