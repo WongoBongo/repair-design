@@ -364,7 +364,7 @@ template {
 }
 
 .button {
-  padding: 13px 20px;
+  padding: 11px 23px;
   border-radius: 2px;
   border: none;
   text-transform: uppercase;
@@ -467,13 +467,15 @@ body {
 .header .logo {
   color: #E3B873;
   text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .nav__item {
   text-decoration: none;
   color: #fff;
-  margin-right: 2.85rem;
-  font-size: 14px;
+  margin-right: 2.5rem;
+  font-size: 0.9rem;
   line-height: 16px;
   text-transform: uppercase;
   -webkit-transition: color 0.2s;
@@ -523,21 +525,26 @@ body {
 }
 
 .hero__text {
+  margin-top: 1.07rem;
   font-size: 1.57rem;
   line-height: 30px;
   max-width: 550px;
+  margin-bottom: 45px;
 }
 
 .hero__instagram {
   position: absolute;
   left: 0;
   top: 0;
+  font-size: 1.1rem;
   max-width: 80px;
   height: 100%;
 }
 
 .hero__button {
-  margin-right: 20px;
+  padding: 18px 23px;
+  margin-right: 15px;
+  min-width: 14.78rem;
 }
 
 .hero__scroll-down {
