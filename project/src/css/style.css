@@ -468,6 +468,7 @@ body {
   color: #E3B873;
   text-transform: uppercase;
   font-size: 0.9rem;
+  min-width: 10.7rem;
   font-weight: 500;
 }
 
@@ -480,6 +481,10 @@ body {
   text-transform: uppercase;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
+}
+
+.nav__item_last {
+  margin-right: 0;
 }
 
 .nav__item:hover {
@@ -505,7 +510,7 @@ body {
   background: url("../img/hero/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff;
-  padding-top: 100px;
+  padding-top: 85px;
 }
 
 .hero::before {
@@ -521,7 +526,7 @@ body {
 .hero__content {
   position: relative;
   max-width: 47.85rem;
-  margin-left: 4.28rem;
+  margin-left: 2.5rem;
 }
 
 .hero__text {
@@ -565,7 +570,9 @@ body {
   background-color: #131313;
   text-transform: uppercase;
   text-decoration: none;
-  color: #E3B873;
+  color: #fff;
+  line-height: 138.6%;
+  font-size: 0.85rem;
 }
 
 .hero__scroll-down::after {
@@ -575,7 +582,7 @@ body {
   background: url("../img/hero/arrow-down.svg") no-repeat center;
   border: 1px solid #E3B873;
   border-radius: 50%;
-  margin-left: 12px;
+  margin-left: 23px;
 }
 
 .instagram {
@@ -626,12 +633,16 @@ body {
   color: #E3B873;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1224px) {
   html {
     font-size: 12px;
   }
   .nav__item {
     margin-right: 1rem;
+  }
+  .contacts__phone {
+    min-width: 9rem;
+    margin-right: 0;
   }
 }
 
