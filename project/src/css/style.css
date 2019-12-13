@@ -901,5 +901,8 @@ img {
   .card__pricetag_design {
     padding: 1.21rem  5.62rem 1.21rem 2rem;
   }
+  .card__text_design {
+    margin-top: -8.3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
