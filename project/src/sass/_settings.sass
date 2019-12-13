@@ -7,22 +7,42 @@ html
 body
   font-family: 'Futura Book', sans-serif
   font-size: 14px
+img
+  max-width: 100% 
 .section
+  padding: 60px 0
   &-title
     text-align: center
-    text-transform: uppercase
-    font-family: Yeseva One
-    font-size: 20px
-    line-height: 28px
+    
+    &__heading
+      text-transform: uppercase
+      font-family: Yeseva One
+      font-size: 1.43rem
+      line-height: 2rem
+      margin-bottom: 0.85rem
+      
+    &__description
+      color: $light
+      margin: auto
+      margin-top: 1.64rem
+      margin-bottom: 2.8rem
+      font-size: 1.07rem
+      max-width: 24.86rem
+      line-height: 135.84%;
+      text-align: center
+    
+
     &__image
       display: flex
       align-items: center
       justify-content: center
+      margin-bottom: 2.14rem
       &::before, &::after
         content: ''
         width: 32px
         height: 2px
         margin: 0 10px
         background-color: $primary
+      
       
     

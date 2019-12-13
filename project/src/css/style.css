@@ -414,12 +414,35 @@ body {
   font-size: 14px;
 }
 
+img {
+  max-width: 100%;
+}
+
+.section {
+  padding: 60px 0;
+}
+
 .section-title {
   text-align: center;
+}
+
+.section-title__heading {
   text-transform: uppercase;
   font-family: Yeseva One;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.43rem;
+  line-height: 2rem;
+  margin-bottom: 0.85rem;
+}
+
+.section-title__description {
+  color: #fff;
+  margin: auto;
+  margin-top: 1.64rem;
+  margin-bottom: 2.8rem;
+  font-size: 1.07rem;
+  max-width: 24.86rem;
+  line-height: 135.84%;
+  text-align: center;
 }
 
 .section-title__image {
@@ -432,6 +455,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 2.14rem;
 }
 
 .section-title__image::before, .section-title__image::after {
@@ -633,6 +657,123 @@ body {
   color: #E3B873;
 }
 
+.types {
+  margin-bottom: 60px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.col {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+
+.card__image {
+  max-width: 100%;
+}
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin: 0 auto;
+  margin-top: -9.4rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.28rem;
+  line-height: 1.8rem;
+}
+
+.card__list {
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  margin-bottom: 2.5rem;
+  color: #959595;
+}
+
+.card__item {
+  font-size: 1.07rem;
+  line-height: 1.8rem;
+}
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -2.3rem;
+  color: #fff;
+  background: #E3B873;
+  padding: 1.21rem 2.62rem;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-family: Yeseva One;
+  font-size: 1.28rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
+
+.design {
+  background-color: #131313;
+  margin: 0 auto;
+}
+
+.design__section-title {
+  color: #fff;
+}
+
+.design__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design__col {
+  margin-bottom: 5rem;
+}
+
+.card__image_design {
+  display: block;
+  max-width: 100%;
+}
+
+.card__pricetag_design {
+  position: absolute;
+  left: 0;
+  bottom: -2.3rem;
+  color: #fff;
+  background: #E3B873;
+  padding: 1.21rem 2.62rem;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-family: Yeseva One;
+  font-size: 1.28rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 1224px) {
   html {
     font-size: 12px;
@@ -696,6 +837,69 @@ body {
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
     display: none;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .col {
+    margin-bottom: 7.5rem;
+  }
+  .card__text {
+    margin-left: 0;
+    margin-top: -11.5rem;
+  }
+  .card__list {
+    margin-bottom: 1.07rem;
+  }
+  .card__item {
+    margin-bottom: 2.5px;
+  }
+  .card__pricetag {
+    padding: 0.9rem 2.95rem;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .design {
+    background-color: #fff;
+  }
+  .design__section-title {
+    color: #131313;
+  }
+  .design__row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .design__col {
+    -ms-flex-preferred-size: 32%;
+        flex-basis: 32%;
+  }
+  .section-title__description {
+    color: #131313;
+    max-width: 741px;
+  }
+  .card__pricetag_design {
+    padding: 1.21rem  5.62rem 1.21rem 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
