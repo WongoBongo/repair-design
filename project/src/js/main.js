@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function (event) {
+/* document.addEventListener("DOMContentLoaded", function () {
   const modal = document.querySelector('.modal');
   // получаем все кнопки, которые имею атрибут data-toggle равный modal (кнопки которые должны открывать модальное окно)
   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
@@ -27,4 +27,44 @@ document.addEventListener("DOMContentLoaded", function (event) {
   document.addEventListener('click', (e) => {
     if (e.target == modal) removeModal();
   });
+});  */
+
+$(document).ready(function () {
+  var modal = $('.modal'),
+      modalBtn = $('[data-toggle=modal]'),
+      closeBtn = $('.modal__close');
+      modalRemove = function () {
+        $('.modal_visible').remove();
+      };
+      
+  modalBtn.on('click', function (e) {
+    modal.toggleClass('modal_visible');
+  });
+  closeBtn.on('click', function(e) {
+    modal.toggleClass('modal_visible');
+  });
+  click = function (e) {
+    if (e.target == '.modal') modalRemove();
+  };
+  onkeydown = function (e) {
+    if (e.code == "Escape") modalRemove();
+  };
+  console.log(click);
 });
+
+
+// появление кнопки наверх , если спустились вниз на 80px
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 200) {
+    $('.pageup').fadeIn();
+  } else {
+    $('.pageup').fadeOut();
+  }
+}); 
+// плавная прокрутка 
+$('#up').on('click', function (e) {
+  e.preventDefault;
+  $('html, body').animate({
+    scrollTop: 0
+  }, '300');
+}); 

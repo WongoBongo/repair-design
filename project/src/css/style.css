@@ -465,6 +465,30 @@ template {
   cursor: pointer;
 }
 
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background: orange;
+  opacity: 0.6;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pageup:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.pageup img {
+  width: 100%;
+}
+
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -669,6 +693,46 @@ img {
   width: 30px;
   height: 30px;
   background: url("../img/hero/arrow-down.svg") no-repeat center;
+  border: 1px solid #E3B873;
+  border-radius: 50%;
+  margin-left: 23px;
+}
+
+.hero__scroll-up {
+  cursor: pointer;
+  z-index: 999;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  right: 0;
+  bottom: 0;
+  min-width: 13.6rem;
+  min-height: 4.92rem;
+  background-color: #131313;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  line-height: 138.6%;
+  font-size: 0.85rem;
+  -webkit-transition: background .2s ease;
+  transition: background .2s ease;
+  display: none;
+}
+
+.hero__scroll-up::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: url("../img/hero/arrow-down.svg") no-repeat center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   border: 1px solid #E3B873;
   border-radius: 50%;
   margin-left: 23px;
