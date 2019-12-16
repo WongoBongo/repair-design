@@ -34,7 +34,7 @@ $(document).ready(function () {
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close');
       modalRemove = function () {
-        $('.modal_visible').remove();
+        modal.toggleClass('modal_visible');
       };
       
   modalBtn.on('click', function (e) {
@@ -43,15 +43,15 @@ $(document).ready(function () {
   closeBtn.on('click', function(e) {
     modal.toggleClass('modal_visible');
   });
-  click = function (e) {
-    if (e.target == '.modal') modalRemove();
-  };
-  onkeydown = function (e) {
-    if (e.code == "Escape") modalRemove();
-  };
-  console.log(click);
+  
+
 });
 
+$(document).on('click', function (e) {
+  if (!modal.is(e.target)) {
+    modal.toggleClass('modal_visible');
+  };
+});
 
 // появление кнопки наверх , если спустились вниз на 80px
 $(window).scroll(function () {
