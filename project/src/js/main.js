@@ -43,15 +43,20 @@ $(document).ready(function () {
   closeBtn.on('click', function(e) {
     modal.toggleClass('modal_visible');
   });
-  
 
-});
-
-$(document).on('click', function (e) {
-  if (!modal.is(e.target)) {
-    modal.toggleClass('modal_visible');
+  $(document).on('click', function (e) {
+    if (modal.is(e.target)) {
+      modal.toggleClass('modal_visible');
+    }
+  });
+  onkeydown = function (e) {
+    if (e.which == "27") modalRemove();
   };
+
 });
+
+
+
 
 // появление кнопки наверх , если спустились вниз на 80px
 $(window).scroll(function () {
@@ -63,7 +68,7 @@ $(window).scroll(function () {
 }); 
 // плавная прокрутка 
 $('#up').on('click', function (e) {
-  e.preventDefault;
+  e.preventDefault()
   $('html, body').animate({
     scrollTop: 0
   }, '300');
