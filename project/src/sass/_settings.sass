@@ -11,16 +11,42 @@ img
   max-width: 100% 
 .section
   padding: 60px 0
+  &_dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
-    
+    &_left
+      text-align: left
+    &__text
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      &_projects
+         margin-top: 20px
+         max-width: 34.57rem
     &__heading
       text-transform: uppercase
       font-family: Yeseva One
       font-size: 1.43rem
       line-height: 2rem
       margin-bottom: 0.85rem
-      
+      &_primary
+        color: $primary
+        font-size: 1.93rem;
+        line-height: 2.64rem;
+        letter-spacing: -0.07em;
+        text-align: left
+        max-width: 18.28rem
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 92px
+        height: 1px
+        background-color: $primary
+        margin-left: 2rem
+        
     &__description
       color: $light
       margin: auto
