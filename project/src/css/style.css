@@ -569,7 +569,19 @@ img {
   line-height: 2.64rem;
   letter-spacing: -0.07em;
   text-align: left;
-  max-width: 18.28rem;
+}
+
+.section-title__heading_steps {
+  margin-top: 15px;
+  margin-bottom: 4rem;
+}
+
+.section-title__work {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
 .section-title__word {
@@ -782,7 +794,7 @@ img {
 
 .hero__scroll-up {
   cursor: pointer;
-  z-index: 999;
+  z-index: 1000;
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -968,12 +980,17 @@ img {
   text-transform: uppercase;
 }
 
+.swiper {
+  overflow: hidden;
+}
+
 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .swiper-slider_image {
@@ -991,6 +1008,10 @@ img {
   margin-bottom: 7rem;
 }
 
+.swiper-slide-img {
+  overflow: hidden;
+}
+
 .swiper-slide__heading {
   margin-bottom: 0.4rem;
   font-size: 1.28rem;
@@ -1003,6 +1024,7 @@ img {
 .swiper-slide__value {
   font-size: 1.07rem;
   line-height: 1.43rem;
+  color: #fff;
 }
 
 .swiper-pagination-bullet {
@@ -1037,6 +1059,70 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
   bottom: 0;
+}
+
+.steps {
+  background-color: #131313;
+}
+
+.steps-block {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+  color: #515151;
+}
+
+.steps-block__item {
+  -ms-flex-preferred-size: 28.4%;
+      flex-basis: 28.4%;
+}
+
+.steps-block__number {
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.08rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #E3B873;
+  max-width: 1.4rem;
+}
+
+.steps-block__text {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+}
+
+.swiper-container {
+  z-index: 0;
+}
+
+.swiper-slide__number {
+  font-family: Yeseva One;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.swiper-slide__heading_steps {
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.swiper-slide__text_steps {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.swiper-slide__value_steps {
+  font-size: 15px;
+  line-height: 25px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
 }
 
 .modal {
@@ -1189,7 +1275,7 @@ img {
   }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 970px) {
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1235,9 +1321,6 @@ img {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
-  .swiper-slide-img {
-    max-width: 450px;
-  }
   .swiper-slide__text {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
@@ -1256,7 +1339,7 @@ img {
   }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 970px) {
   .design {
     background-color: #fff;
   }

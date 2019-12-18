@@ -53,7 +53,7 @@ $(document).ready(function () {
     if (e.which == "27") modalRemove();
   };
 
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('.swiper-container_projects', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
@@ -70,6 +70,25 @@ $(document).ready(function () {
 
   next.css('left', prev.width() + 30 + bullets.width()+ 30);
   bullets.css('left',prev.width()+27 );
+
+  var twoSwiper = new Swiper('.swiper-container_steps', {
+    loop: true,
+    pagination: {
+      el: 'swiper-pagination_steps',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next_steps',
+      prevEl: '.swiper-button-prev_steps',
+    },
+  });
+  var next = $('.swiper-button-next_steps');
+  var prev = $('.swiper-button-prev_steps');
+  var bullets = $('.swiper-pagination_steps');
+
+  next.css('left', prev.width() + 30 + bullets.width() + 30);
+  bullets.css('left', prev.width() + 27);
+ 
   
 
 });

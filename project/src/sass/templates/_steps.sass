@@ -1,0 +1,50 @@
+.steps
+  background-color: $dark
+
+  &-block
+    color: $light
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 2rem
+    color:  darken(#ffffff, 68.24)
+
+    &__item
+      flex-basis: 28.4%
+      
+    &__number
+      font-family: 'Yeseva One', cursive
+      font-size: 1.08rem
+      line-height: 1.5rem
+      text-transform: uppercase
+      border-bottom: 1px solid $primary
+      max-width: 1.4rem
+    &__text
+      font-size: 1.1rem;
+      line-height: 1.4rem
+
+  
+    
+
+
+.swiper
+  &-container
+    z-index: 0
+  &-slide
+    &__number
+      font-family: Yeseva One
+      color: $light
+      font-size: 1.25rem
+    &__heading
+      &_steps
+        font-size: 15px;
+        line-height: 23px;
+
+    &__text
+      &_steps
+        flex-basis: 70%
+    &__value
+      &_steps
+        font-size: 15px;
+        line-height: 25px
+        flex-basis: 80%

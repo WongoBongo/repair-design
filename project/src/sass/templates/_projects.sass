@@ -1,8 +1,9 @@
 .swiper
+  overflow: hidden
   &-slide
     display: flex
     flex-wrap: wrap
-
+    overflow: hidden
     &r
       &_image
         margin-top: -13.5rem
@@ -10,9 +11,10 @@
       margin-top: 1rem
       flex-basis: 33.4% 
       margin-bottom: 0
-      
       &:last-of-type
         margin-bottom: 7rem
+    &-img
+      overflow: hidden
     &__heading
       margin-bottom: 0.4rem
       font-size: 1.28rem
@@ -25,6 +27,7 @@
     &__value
       font-size: 1.07rem
       line-height: 1.43rem
+      color: $light
 
       
   &-pagination
@@ -47,6 +50,7 @@
     &-prev
       left: 0
       background: url('../img/projects/arrow-left.svg') center no-repeat
+      
 .swiper-container-horizontal>.swiper-pagination-bullets
   width: auto
   bottom: 0
