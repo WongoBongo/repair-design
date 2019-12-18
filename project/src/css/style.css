@@ -976,11 +976,15 @@ img {
       flex-wrap: wrap;
 }
 
+.swiper-slider_image {
+  margin-top: -13.5rem;
+}
+
 .swiper-slide__text {
   margin-top: 1rem;
   -ms-flex-preferred-size: 33.4%;
       flex-basis: 33.4%;
-  margin-bottom: 1.9rem;
+  margin-bottom: 0;
 }
 
 .swiper-slide__text:last-of-type {
@@ -1210,6 +1214,45 @@ img {
   }
   .card__pricetag {
     padding: 0.9rem 2.95rem;
+  }
+  .section-title_left {
+    text-align: center;
+    width: auto;
+    margin: auto;
+  }
+  .section-title__heading_primary {
+    text-align: center;
+    margin: auto;
+  }
+  .section-title__word {
+    display: block;
+  }
+  .section-title__word::after {
+    display: none;
+  }
+  .section-title__text_projects {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .swiper-slide-img {
+    max-width: 450px;
+  }
+  .swiper-slide__text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .swiper-slider_image {
+    margin-top: 0;
+  }
+  .col_50 {
+    width: 100%;
+  }
+  .col_50_mobile {
+    max-width: 100%;
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
   }
 }
 
