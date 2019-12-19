@@ -553,6 +553,7 @@ img {
 .section-title__text_projects {
   margin-top: 20px;
   max-width: 34.57rem;
+  margin-right: 0;
 }
 
 .section-title__heading {
@@ -792,46 +793,6 @@ img {
   margin-left: 23px;
 }
 
-.hero__scroll-up {
-  cursor: pointer;
-  z-index: 1000;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  right: 0;
-  bottom: 0;
-  min-width: 13.6rem;
-  min-height: 4.92rem;
-  background-color: #131313;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  line-height: 138.6%;
-  font-size: 0.85rem;
-  -webkit-transition: background .2s ease;
-  transition: background .2s ease;
-  display: none;
-}
-
-.hero__scroll-up::after {
-  content: '';
-  width: 30px;
-  height: 30px;
-  background: url("../img/hero/arrow-down.svg") no-repeat center;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  border: 1px solid #E3B873;
-  border-radius: 50%;
-  margin-left: 23px;
-}
-
 .instagram {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -849,9 +810,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   text-decoration: none;
   color: #E3B873;
@@ -1098,10 +1059,6 @@ img {
   line-height: 1.4rem;
 }
 
-.swiper-container {
-  z-index: 0;
-}
-
 .swiper-slide__number {
   font-family: Yeseva One;
   color: #fff;
@@ -1232,6 +1189,21 @@ img {
   .hero__content {
     margin-left: 0;
   }
+  .section-title {
+    text-align: left;
+  }
+  .section-title__text_projects {
+    max-width: 30.57rem;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .section-title {
+    text-align: left;
+  }
+  .section-title__text_projects {
+    max-width: 26.57rem;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -1275,7 +1247,7 @@ img {
   }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 760px) {
   .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1339,7 +1311,7 @@ img {
   }
 }
 
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 760px) {
   .design {
     background-color: #fff;
   }
