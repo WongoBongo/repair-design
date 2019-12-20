@@ -53,20 +53,20 @@ $(document).ready(function () {
     if (e.which == "27") modalRemove();
   };
 
-  var mySwiper = new Swiper('.swiper-container_projects', {
+  var mySwiper = new Swiper('.swiper-container__projects', {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next__projects',
+      prevEl: '.swiper-button-prev__projects',
     },
   });
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+  var next = $('.swiper-button-next__projects');
+  var prev = $('.swiper-button-prev__projects');
+  var bullets = $('.swiper-pagination__projects');
 
   next.css('left', prev.width() + 30 + bullets.width()+ 30);
   bullets.css('left',prev.width()+27 );
@@ -74,7 +74,7 @@ $(document).ready(function () {
   var twoSwiper = new Swiper('.swiper-container_steps', {
     loop: true,
     pagination: {
-      el: 'swiper-pagination_steps',
+      el: '.swiper-pagination_steps',
       type: 'bullets',
     },
     navigation: {
@@ -82,15 +82,39 @@ $(document).ready(function () {
       prevEl: '.swiper-button-prev_steps',
     },
   });
-  var next = $('.swiper-button-next_steps');
-  var prev = $('.swiper-button-prev_steps');
-  var bullets = $('.swiper-pagination_steps');
+  var left= $('.swiper-button-next_steps');
+  var right = $('.swiper-button-prev_steps');
+  var bullet = $('.swiper-pagination_steps');
 
-  next.css('left', prev.width() + 30 + bullets.width() + 30);
-  bullets.css('left', prev.width() + 27);
+  left.css('left', right.width()  + bullet.width() + 30);
+  bullet.css('left', right.width() + 10);
  
-  
+  /* let changeActive = function (i) {
+    if (i === -1) {
+      i = items.length - 1
+    } else if (i === items.length) {
+      i = 0
+    }
+    item = items[i];
+    items.forEach((el) => {
+      el.classlist.remove('item--active');
+    })
+    item.classlist.add('item--active');
 
+    stepsSlider.forEach((el) => {
+      el.slideTO(i + 1);
+    });
+    stepsSlider(0).on('slideChange', () => {
+      changeActive(stepsSlider[0].activeIndex = 1);
+    });
+
+    items.forEach((item, i) => {
+      item.addEventListener('click', () => {
+        changeActive(i);
+      });
+    });
+  }; */
+  
 });
 
 
@@ -113,4 +137,3 @@ $('#up').on('click', function (e) {
 }); 
 
 
-  

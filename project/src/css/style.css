@@ -384,6 +384,14 @@ template {
   width: 50%;
 }
 
+.col_40 {
+  width: 40%;
+}
+
+.col_60 {
+  width: 60%;
+}
+
 .button {
   padding: 11px 23px;
   border-radius: 2px;
@@ -499,6 +507,7 @@ template {
   padding: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 10;
 }
 
 .pageup:hover {
@@ -1308,6 +1317,9 @@ img {
     -webkit-box-ordinal-group: -2;
         -ms-flex-order: -3;
             order: -3;
+  }
+  .section-steps {
+    display: none;
   }
 }
 
