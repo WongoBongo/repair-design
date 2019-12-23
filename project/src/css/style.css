@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -357,6 +358,8 @@ template {
   font-display: wrap;
 }
 
+/* шрифты */
+/* переменные*/
 .container {
   width: 85%;
   max-width: 1256px;
@@ -392,6 +395,7 @@ template {
   width: 60%;
 }
 
+/* сетка */
 .button {
   padding: 11px 23px;
   border-radius: 2px;
@@ -516,7 +520,7 @@ template {
   content: '';
   height: 18px;
   width: 18px;
-  border: 1px solid #fff;
+  border: 1px solid #E3B873;
   border-radius: 2px;
   margin-right: 0.64rem;
   cursor: pointer;
@@ -547,6 +551,7 @@ template {
   width: 100%;
 }
 
+/* наиболее часто встречающиеся элементы */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -675,6 +680,7 @@ img {
   background-color: #E3B873;
 }
 
+/* глобальные настройки */
 .header {
   position: fixed;
   left: 0;
@@ -732,6 +738,7 @@ img {
   margin-right: 45px;
 }
 
+/* стили шапки страницы */
 .hero {
   position: relative;
   display: -webkit-box;
@@ -882,202 +889,7 @@ img {
   color: #E3B873;
 }
 
-.control__section-title {
-  margin-top: -30rem;
-}
-
-.control__video {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  margin-bottom: 4.428rem;
-  max-width: 58.357rem;
-  min-height: 31rem;
-  background: url("../img/control/main-video.jpg") center no-repeat;
-  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
-}
-
-.control__video::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(19, 19, 19, 0.8);
-}
-
-.control__text {
-  max-width: 44.785rem;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 1.428rem;
-  line-height: 2.428rem;
-}
-
-.control__text::before {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 3.92rem;
-  height: 3px;
-  background-color: #E3B873;
-  border-radius: 30px;
-  margin-bottom: 2rem;
-}
-
-.control__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 55rem;
-  margin: auto;
-  margin-top: 4.42rem;
-}
-
-.control__input-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-
-.control__label {
-  margin-bottom: -7px;
-}
-
-.control__policy {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  margin-top: 1.3rem;
-}
-
-.control__policy_label {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.control__button {
-  padding: 1.286rem 4.4rem;
-}
-
-.video__play {
-  position: relative;
-  margin: auto;
-}
-
-.types {
-  margin-bottom: 60px;
-}
-
-.card__image {
-  max-width: 100%;
-}
-
-.card__text {
-  position: relative;
-  max-width: 23.6rem;
-  margin: 0 auto;
-  margin-top: -9.4rem;
-  padding: 1.79rem 2.14rem;
-  background-color: #fff;
-  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
-}
-
-.card__title {
-  margin: 0;
-  margin-bottom: 0.5rem;
-  font-family: 'Yeseva One', cursive;
-  font-size: 1.28rem;
-  line-height: 1.8rem;
-}
-
-.card__list {
-  margin: 0;
-  padding: 0 0 0 1.5rem;
-  margin-bottom: 2.5rem;
-  color: #959595;
-}
-
-.card__item {
-  font-size: 1.07rem;
-  line-height: 1.8rem;
-}
-
-.card__pricetag {
-  position: absolute;
-  left: 0;
-  bottom: -2.3rem;
-  color: #fff;
-  background: #E3B873;
-  padding: 1.21rem 2.62rem;
-  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-  font-family: Yeseva One;
-  font-size: 1.28rem;
-  line-height: 1.8rem;
-  text-transform: uppercase;
-}
-
-.design {
-  background-color: #131313;
-  margin: 0 auto;
-}
-
-.design__section-title {
-  color: #fff;
-}
-
-.design__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.design__col {
-  margin-bottom: 5rem;
-}
-
-.card__image_design {
-  display: block;
-  max-width: 100%;
-}
-
-.card__pricetag_design {
-  position: absolute;
-  left: 0;
-  bottom: -2.3rem;
-  color: #fff;
-  background: #E3B873;
-  padding: 1.21rem 2.62rem;
-  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
-  font-family: Yeseva One;
-  font-size: 1.28rem;
-  line-height: 1.8rem;
-  text-transform: uppercase;
-}
-
+/* стили секции турецкий ремонт*/
 .projects {
   padding-bottom: 30rem;
 }
@@ -1163,6 +975,210 @@ img {
   bottom: 0;
 }
 
+/* стили секции завершенные проекты */
+.control__section-title {
+  margin-top: -30rem;
+}
+
+.control__video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 4.428rem;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: url("../img/control/main-video.jpg") center no-repeat;
+  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.control__video::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.8);
+}
+
+.control__text {
+  max-width: 44.785rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.428rem;
+  line-height: 2.428rem;
+}
+
+.control__text::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 3.92rem;
+  height: 3px;
+  background-color: #E3B873;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+
+.control__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 55rem;
+  margin: auto;
+  margin-top: 4.42rem;
+}
+
+.control__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.control__label {
+  margin-bottom: -7px;
+}
+
+.control__policy {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 1.3rem;
+}
+
+.control__policy_checkbox {
+  border: 1px solid #E3B873;
+}
+
+.control__policy_label {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.control__button {
+  padding: 1.286rem 4.4rem;
+}
+
+.video__play {
+  position: relative;
+  margin: auto;
+}
+
+/* стили секции онлайн контроль*/
+.types {
+  margin-bottom: 60px;
+}
+
+.card__image {
+  max-width: 100%;
+}
+
+.card__text {
+  position: relative;
+  max-width: 23.6rem;
+  margin: 0 auto;
+  margin-top: -9.4rem;
+  padding: 1.79rem 2.14rem;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.28rem;
+  line-height: 1.8rem;
+}
+
+.card__list {
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  margin-bottom: 2.5rem;
+  color: #959595;
+}
+
+.card__item {
+  font-size: 1.07rem;
+  line-height: 1.8rem;
+}
+
+.card__pricetag {
+  position: absolute;
+  left: 0;
+  bottom: -2.3rem;
+  color: #fff;
+  background: #E3B873;
+  padding: 1.21rem 2.62rem;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-family: Yeseva One;
+  font-size: 1.28rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* стили секции виды ремонта */
+.design {
+  background-color: #131313;
+  margin: 0 auto;
+}
+
+.design__section-title {
+  color: #fff;
+}
+
+.design__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design__col {
+  margin-bottom: 5rem;
+}
+
+.card__image_design {
+  display: block;
+  max-width: 100%;
+}
+
+.card__pricetag_design {
+  position: absolute;
+  left: 0;
+  bottom: -2.3rem;
+  color: #fff;
+  background: #E3B873;
+  padding: 1.21rem 2.62rem;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-family: Yeseva One;
+  font-size: 1.28rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
+
+/* стили секции дизайн проект */
 .steps {
   background-color: #131313;
 }
@@ -1223,6 +1239,7 @@ img {
       flex-basis: 80%;
 }
 
+/* стили секции 6 шагов до успеха */
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -1307,6 +1324,53 @@ img {
   margin-top: 58px;
 }
 
+/* стили модального окна*/
+@-webkit-keyframes appearLeaft {
+  from {
+    margin-left: -400px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes appearLeaft {
+  from {
+    margin-left: -400px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes appearRight {
+  from {
+    margin-right: -400px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes appearRight {
+  from {
+    margin-right: -400px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+.Left {
+  -webkit-animation: appearLeaft  1s ease-in 0.5s 1 normal none;
+          animation: appearLeaft  1s ease-in 0.5s 1 normal none;
+}
+
+.Right {
+  -webkit-animation: appearRight  1s ease-in 0.5s 1 normal none;
+          animation: appearRight  1s ease-in 0.5s 1 normal none;
+}
+
+/*  анимации */
 @media screen and (max-width: 1224px) {
   html {
     font-size: 12px;
@@ -1330,7 +1394,7 @@ img {
   .hero__content {
     margin-left: 0;
   }
-  .section-title {
+  .section-title_left {
     text-align: left;
   }
   .section-title__text_projects {
@@ -1339,7 +1403,7 @@ img {
 }
 
 @media screen and (max-width: 860px) {
-  .section-title {
+  .section-title_left {
     text-align: left;
   }
   .section-title__text_projects {
@@ -1492,4 +1556,6 @@ img {
     margin-top: -8.3rem;
   }
 }
+
+/* стили адаптива */
 /*# sourceMappingURL=style.css.map */

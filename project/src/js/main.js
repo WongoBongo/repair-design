@@ -115,7 +115,52 @@ $(document).ready(function () {
     });
   }; */
   new WOW().init();
+
+  var block_show = false;
+  var block_right = false;
+
+  function scrollTracking() {
+    if (block_show,block_right) {
+      return false;
+    }
+
+    var wt = $(window).scrollTop();
+    var wh = $(window).height();
+    var et = $('.container_projects').offset().top;
+    var eh = $('.container_projects').outerHeight();
+    var bt = $('.container_projects').offset().top;
+    var bh = $('.container_projects').outerHeight();
+    var dh = $(document).height();
+
+    if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
+      block_show = true;
+      
+   
+      // Код анимации
+
+      $('.container_projects').addClass('Left');
+      $('.menu').addClass('Right');
+    }
+    if (wt + wh >= bt || wh + wt == dh || bh + bt < wh) {
+      block_show = true;
+
+
+      // Код анимации
+
+      $('.control').addClass('Right');
+    }
+  }
+
+
+  $(window).scroll(function () {
+    scrollTracking();
+  });
+
+  $(document).ready(function () {
+    scrollTracking();
+  });
 });
+
 
 
 
@@ -135,5 +180,4 @@ $('#up').on('click', function (e) {
     scrollTop: 0
   }, '300');
 }); 
-
 
