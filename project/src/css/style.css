@@ -360,6 +360,52 @@ template {
 
 /* шрифты */
 /* переменные*/
+@-webkit-keyframes appearLeaft {
+  from {
+    margin-left: -400px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes appearLeaft {
+  from {
+    margin-left: -400px;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@-webkit-keyframes appearRight {
+  from {
+    margin-right: -400px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes appearRight {
+  from {
+    margin-right: -400px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+.Left {
+  -webkit-animation: appearLeaft  1s ease-in 0.5s 1 normal none;
+          animation: appearLeaft  1s ease-in 0.5s 1 normal none;
+}
+
+.Right {
+  -webkit-animation: appearRight  1s ease-in 0.5s 1 normal none;
+          animation: appearRight  1s ease-in 0.5s 1 normal none;
+}
+
+/*  анимации */
 .container {
   width: 85%;
   max-width: 1256px;
@@ -514,6 +560,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.142rem;
 }
 
 .policy__label::before {
@@ -524,6 +571,12 @@ template {
   border-radius: 2px;
   margin-right: 0.64rem;
   cursor: pointer;
+}
+
+.policy__label_center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .pageup {
@@ -549,6 +602,14 @@ template {
 
 .pageup img {
   width: 100%;
+}
+
+.invalid {
+  color: tomato;
+}
+
+input.invalid {
+  border-bottom: 1px solid tomato;
 }
 
 /* наиболее часто встречающиеся элементы */
@@ -681,6 +742,98 @@ img {
 }
 
 /* глобальные настройки */
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  z-index: 199;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal_visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__dialog {
+  position: relative;
+  max-width: 36.36rem;
+  background: #131313 url("../img/bg-lines.svg") no-repeat center;
+  padding: 2.36rem 3.5rem 1.928rem;
+  color: #fff;
+}
+
+.modal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  background: transparent url("../img/close.svg") no-repeat center;
+  border: none;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.modal__title {
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-size: 1.357rem;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 2.428rem;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3.42rem;
+}
+
+.modal__input:last-of-type {
+  margin-bottom: 1.22rem;
+}
+
+.modal__button {
+  padding: 19px 40px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 58px;
+}
+
+/* стили модального окна*/
 .header {
   position: fixed;
   left: 0;
@@ -691,7 +844,7 @@ img {
   padding: 24px 0;
 }
 
-.header .menu {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,7 +856,7 @@ img {
           align-items: center;
 }
 
-.header .logo {
+.logo {
   color: #E3B873;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -1179,6 +1332,84 @@ img {
 }
 
 /* стили секции дизайн проект */
+.footer {
+  background: #131313 url("../img/footer/footer-bg.jpg") no-repeat center/cover;
+}
+
+.footer-wrap {
+  background-color: #181818;
+  max-width: 63.07rem;
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-family: 'Yeseva One',cursive;
+  font-size: 1.43rem;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 3.214rem;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 37rem;
+  margin: auto;
+}
+
+.footer__input {
+  padding-top: 0.2rem;
+}
+
+.footer__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 45.5%;
+      flex-basis: 45.5%;
+}
+
+.footer__input-group_full-width {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 3.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.footer__policy {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__button {
+  margin: 0 auto;
+  margin-top: 3.3rem;
+  padding: 1.285rem 4.55rem;
+}
+
+.footer-menu {
+  margin-top: 3.714rem;
+  background-color: #131313;
+  padding: 4.285rem 0;
+}
+
+/* стили секции дизайн проект */
 .steps {
   background-color: #131313;
 }
@@ -1240,137 +1471,6 @@ img {
 }
 
 /* стили секции 6 шагов до успеха */
-.modal {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  z-index: 199;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(19, 19, 19, 0.6);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.modal_visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal__dialog {
-  position: relative;
-  max-width: 36.36rem;
-  background: #131313 url("../img/bg-lines.svg") no-repeat center;
-  padding: 2.36rem 3.5rem 1.928rem;
-  color: #fff;
-}
-
-.modal__close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 28px;
-  height: 28px;
-  background: transparent url("../img/close.svg") no-repeat center;
-  border: none;
-  margin: 12px;
-  cursor: pointer;
-}
-
-.modal__title {
-  font-family: 'Yeseva One', cursive;
-  text-transform: uppercase;
-  font-size: 1.357rem;
-  line-height: 26px;
-  text-align: center;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 2.428rem;
-}
-
-.modal__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.modal__input {
-  margin-bottom: 3.42rem;
-}
-
-.modal__input:last-of-type {
-  margin-bottom: 1.22rem;
-}
-
-.modal__button {
-  padding: 19px 40px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  margin-top: 58px;
-}
-
-/* стили модального окна*/
-@-webkit-keyframes appearLeaft {
-  from {
-    margin-left: -400px;
-  }
-  to {
-    margin-left: 0;
-  }
-}
-@keyframes appearLeaft {
-  from {
-    margin-left: -400px;
-  }
-  to {
-    margin-left: 0;
-  }
-}
-
-@-webkit-keyframes appearRight {
-  from {
-    margin-right: -400px;
-  }
-  to {
-    margin-right: 0;
-  }
-}
-
-@keyframes appearRight {
-  from {
-    margin-right: -400px;
-  }
-  to {
-    margin-right: 0;
-  }
-}
-
-.Left {
-  -webkit-animation: appearLeaft  1s ease-in 0.5s 1 normal none;
-          animation: appearLeaft  1s ease-in 0.5s 1 normal none;
-}
-
-.Right {
-  -webkit-animation: appearRight  1s ease-in 0.5s 1 normal none;
-          animation: appearRight  1s ease-in 0.5s 1 normal none;
-}
-
-/*  анимации */
 @media screen and (max-width: 1224px) {
   html {
     font-size: 12px;

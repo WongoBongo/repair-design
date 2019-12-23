@@ -114,8 +114,9 @@ $(document).ready(function () {
       });
     });
   }; */
+  //иницилизация библиботеки wow js
   new WOW().init();
-
+  // скрипт запуска анимации
   var block_show = false;
   var block_right = false;
 
@@ -128,8 +129,8 @@ $(document).ready(function () {
     var wh = $(window).height();
     var et = $('.container_projects').offset().top;
     var eh = $('.container_projects').outerHeight();
-    var bt = $('.container_projects').offset().top;
-    var bh = $('.container_projects').outerHeight();
+    var bt = $('.control').offset().top;
+    var bh = $('.control').outerHeight();
     var dh = $(document).height();
 
     if (wt + wh >= et || wh + wt == dh || eh + et < wh) {
@@ -139,7 +140,6 @@ $(document).ready(function () {
       // Код анимации
 
       $('.container_projects').addClass('Left');
-      $('.menu').addClass('Right');
     }
     if (wt + wh >= bt || wh + wt == dh || bh + bt < wh) {
       block_show = true;
@@ -159,6 +159,43 @@ $(document).ready(function () {
   $(document).ready(function () {
     scrollTracking();
   });
+  //Валидация формы модального окна
+   $('.modal__form').validate({
+     errorClass: "invalid",
+     rules: {
+       // строчное правило
+       userName: {
+         required: true,
+         minlength: 2,
+         maxlength: 15
+       },
+       userPhone: "required",
+       // правило-объект
+       userEmail: {
+         required: true,
+         email: true
+       }
+     }, // сообщения
+     errorElement: "div",
+     messages: {
+       userName: {
+         required: "Заполните поле",
+         minlength: "Имя не короче двух букв",
+         maxlength: "Имя не больше 15 букв"
+       },
+       userPhone: "Заполните поле",
+       userEmail: {
+         required: "Заполните поле",
+         email: "Введите корректный email"
+       }
+     }
+   });
+
+
+
+
+    // маска для телефона
+    $('[type=tel]').mask('+7(000) 000-00-00', { placeholder: "+7(___) ___-__-__"});
 });
 
 
