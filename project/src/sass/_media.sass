@@ -122,8 +122,7 @@
       max-width: 100%
       order: -3
      
-  .section-steps
-    display: none
+  
 
       
         
@@ -150,7 +149,42 @@
     margin-top: -8.3rem
 
 
+@media screen and ( max-width: 760px )
+  .control
+    background: $dark
+    color: $light
+    &__form
+      display: flex
+      flex-direction: column
+    &__input-group
+      margin-bottom: 3rem
+    &__label
+      color: $light
+    &__input
+      color: #fff
 
-  
+
+  .section-steps
+    display: none
 
 
+
+
+  .team
+    &__container
+      margin-top: 0
+    &__description
+      display: none
+  .team__col_30
+    margin-bottom: 8rem
+  .section-team
+    background: $dark
+
+  .footer
+    &__form
+      max-width: 
+      flex-direction: column
+    &__input-group
+      margin-bottom: 3rem
+      &_full-width
+        margin-top: 0

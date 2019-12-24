@@ -190,8 +190,64 @@ $(document).ready(function () {
        }
      }
    });
+   // Валидация control__form
 
-
+   $('.control__form').validate({
+     errorClass: "invalid",
+     rules: {
+       // строчное правило
+       userName: {
+         required: true,
+         minlength: 2,
+         maxlength: 15
+       },
+       userPhone: "required",
+     }, // сообщения
+     errorElement: "div",
+     messages: {
+       userName: {
+         required: "Заполните поле",
+         minlength: "Имя не короче двух букв",
+         maxlength: "Имя не больше 15 букв"
+       },
+       userPhone: {
+         required: "Заполните поле"
+       }
+     }
+   });
+   // Валидация footer__form
+   $('.footer__form').validate({
+     errorClass: "invalid",
+     rules: {
+       // строчное правило
+       userName: {
+         required: true,
+         minlength: 2,
+         maxlength: 15
+       },
+       userPhone: "required",
+       // правило-объект
+       userQuestion: {
+         required: true,
+         minlength: 5,
+         maxlength: 40
+       }
+     }, // сообщения
+     errorElement: "div",
+     messages: {
+       userName: {
+         required: "Заполните поле",
+         minlength: "Имя не короче двух букв",
+         maxlength: "Имя не больше 15 букв"
+       },
+       userPhone: "Заполните поле",
+       userQuestion: {
+         required: "Заполните поле",
+          minlength: "Не короче 5 букв",
+          maxlength: "Не больше 40 букв"
+       }
+     }
+   });
 
 
     // маска для телефона

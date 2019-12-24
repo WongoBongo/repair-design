@@ -606,10 +606,13 @@ template {
 
 .invalid {
   color: tomato;
+  position: absolute;
+  margin-top: 4rem;
 }
 
 input.invalid {
   border-bottom: 1px solid tomato;
+  margin: 0;
 }
 
 /* наиболее часто встречающиеся элементы */
@@ -663,6 +666,19 @@ img {
   margin-right: 0;
 }
 
+.section-title__text_team {
+  text-align: center;
+  max-width: 36rem;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 6.3rem;
+  color: #fff;
+  font-size: 1.43rem;
+  line-height: 2rem;
+  font-style: normal;
+  font-weight: normal;
+}
+
 .section-title__heading {
   text-transform: uppercase;
   font-family: Yeseva One;
@@ -682,6 +698,10 @@ img {
 .section-title__heading_steps {
   margin-top: 15px;
   margin-bottom: 4rem;
+}
+
+.section-title__heading_team {
+  color: #fff;
 }
 
 .section-title__work {
@@ -739,6 +759,10 @@ img {
   height: 2px;
   margin: 0 10px;
   background-color: #E3B873;
+}
+
+.section-title__image_team {
+  margin-bottom: 1.5rem;
 }
 
 /* глобальные настройки */
@@ -809,6 +833,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.modal__input {
+  position: relative;
 }
 
 .modal__input-group {
@@ -1161,6 +1189,8 @@ img {
   margin: 0 auto;
   font-size: 1.428rem;
   line-height: 2.428rem;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .control__text::before {
@@ -1188,6 +1218,11 @@ img {
   margin-top: 4.42rem;
 }
 
+.control__input {
+  position: relative;
+  color: #131313;
+}
+
 .control__input-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1198,10 +1233,6 @@ img {
           flex-direction: column;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-}
-
-.control__label {
-  margin-bottom: -7px;
 }
 
 .control__policy {
@@ -1332,86 +1363,9 @@ img {
 }
 
 /* стили секции дизайн проект */
-.footer {
-  background: #131313 url("../img/footer/footer-bg.jpg") no-repeat center/cover;
-}
-
-.footer-wrap {
-  background-color: #181818;
-  max-width: 63.07rem;
-  margin: auto;
-  padding: 2.5rem;
-}
-
-.footer__title {
-  text-transform: uppercase;
-  font-family: 'Yeseva One',cursive;
-  font-size: 1.43rem;
-  line-height: 2rem;
-  text-align: center;
-  font-weight: normal;
-  font-style: normal;
-  margin-bottom: 3.214rem;
-}
-
-.footer__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 37rem;
-  margin: auto;
-}
-
-.footer__input {
-  padding-top: 0.2rem;
-}
-
-.footer__input-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-preferred-size: 45.5%;
-      flex-basis: 45.5%;
-}
-
-.footer__input-group_full-width {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  margin-top: 3.2rem;
-  margin-bottom: 1.8rem;
-}
-
-.footer__policy {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.footer__button {
-  margin: 0 auto;
-  margin-top: 3.3rem;
-  padding: 1.285rem 4.55rem;
-}
-
-.footer-menu {
-  margin-top: 3.714rem;
-  background-color: #131313;
-  padding: 4.285rem 0;
-}
-
-/* стили секции дизайн проект */
 .steps {
   background-color: #131313;
+  padding-bottom: 36rem;
 }
 
 .steps-block {
@@ -1471,6 +1425,187 @@ img {
 }
 
 /* стили секции 6 шагов до успеха */
+.section-team {
+  background: url("../img/team/team-bg.jpg") center no-repeat;
+}
+
+.team {
+  padding-bottom: 60rem;
+}
+
+.team__container {
+  margin-top: -35rem;
+}
+
+.team__card {
+  max-width: 272px;
+}
+
+.team__icon {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -2.5rem;
+  margin-left: -2.5rem;
+  width: 70px;
+  height: 70px;
+  background-color: #E3B873;
+}
+
+.team__text {
+  max-width: 240px;
+  margin-top: -6.5rem;
+  padding-bottom: 5rem;
+}
+
+.team__title {
+  margin-bottom: 0.2rem;
+  font-family: Yeseva One,cursive;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.28rem;
+  line-height: 1.78rem;
+  text-align: center;
+}
+
+.team__position {
+  display: block;
+  text-align: center;
+  color: #959595;
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.28rem;
+  line-height: 1.9rem;
+  text-align: center;
+}
+
+.team__pricetag {
+  bottom: 0.5rem;
+  text-align: center;
+  min-width: 17.14rem;
+  padding: 13px 24px;
+  color: #fff;
+  background: #E3B873;
+  -webkit-box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+          box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  font-family: Yeseva One;
+  font-size: 1rem;
+  line-height: 1.42rem;
+  text-transform: uppercase;
+}
+
+.team__description {
+  margin: auto;
+  margin-top: 4.5rem;
+  max-width: 580px;
+  text-align: center;
+  font-family: FuturaBookC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.42rem;
+  line-height: 2.5rem;
+}
+
+.team__description::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 3.92rem;
+  height: 3px;
+  background-color: #E3B873;
+  border-radius: 30px;
+  margin-bottom: 0.7rem;
+}
+
+/* стили секции наша команда*/
+.footer {
+  background: #131313 url("../img/footer/footer-bg.jpg") no-repeat center/cover;
+}
+
+.footer-wrap {
+  background-color: #181818;
+  max-width: 63.07rem;
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-family: 'Yeseva One',cursive;
+  font-size: 1.43rem;
+  line-height: 2rem;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 3.214rem;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 37rem;
+  margin: auto;
+}
+
+.footer__input {
+  padding-top: 0.2rem;
+  position: relative;
+}
+
+.footer__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 45.5%;
+      flex-basis: 45.5%;
+}
+
+.footer__input-group_full-width {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 3.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.footer__policy {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer__button {
+  margin: 0 auto;
+  margin-top: 3.3rem;
+  padding: 1.285rem 4.55rem;
+}
+
+.footer-menu {
+  margin-top: 3.714rem;
+  background-color: #131313;
+  padding: 4.285rem 0;
+}
+
+/* стили секции дизайн проект */
 @media screen and (max-width: 1224px) {
   html {
     font-size: 12px;
@@ -1614,9 +1749,6 @@ img {
         -ms-flex-order: -3;
             order: -3;
   }
-  .section-steps {
-    display: none;
-  }
 }
 
 @media screen and (min-width: 760px) {
@@ -1654,6 +1786,58 @@ img {
   }
   .card__text_design {
     margin-top: -8.3rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .control {
+    background: #131313;
+    color: #fff;
+  }
+  .control__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .control__input-group {
+    margin-bottom: 3rem;
+  }
+  .control__label {
+    color: #fff;
+  }
+  .control__input {
+    color: #fff;
+  }
+  .section-steps {
+    display: none;
+  }
+  .team__container {
+    margin-top: 0;
+  }
+  .team__description {
+    display: none;
+  }
+  .team__col_30 {
+    margin-bottom: 8rem;
+  }
+  .section-team {
+    background: #131313;
+  }
+  .footer__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__input-group {
+    margin-bottom: 3rem;
+  }
+  .footer__input-group_full-width {
+    margin-top: 0;
   }
 }
 

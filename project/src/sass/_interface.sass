@@ -36,6 +36,7 @@
   font-size: 1.285rem
   color: $light
   padding: 0.5rem 0
+  
   &_light
     &::placeholder
       color: $light
@@ -88,12 +89,17 @@
     opacity: 1
   img 
       width: 100%
+
+.input-group
+  
 .invalid 
   color: tomato; 
-
+  position: absolute;
+  margin-top: 4rem;
 input
   &.invalid 
-   border-bottom: 1px solid tomato; 
+   border-bottom: 1px solid tomato;
+   margin: 0
 
 
 

@@ -166,7 +166,7 @@
       <!-- /.container -->
     </section>
     <!-- /.section section_dark projects -->
-    <section class="section control">
+    <section class="section   control">
       <div class="container">
         <div class="section-title control__section-title section-title_light">
           <h2 class="section-title__heading">Онлайн контроль</h2>
@@ -186,14 +186,14 @@
           сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте
           заявку ниже чтобы получить ссылку на трансляцию.
         </p>
-        <form action="" class="form control__form">
+        <form action="#" class="form control__form">
           <div class="control__input-group">
             <label for="user-name" class="label form__label control__label label_dark" id="user-name">Имя</label>
-            <input type="text" class="input form__input control__input input_dark" placeholder="Как вас зовут:">
+            <input type="text" name="userName"  class="input form__input control__input input_dark" placeholder="Как вас зовут:">
           </div>
           <div class="control__input-group">
             <label for="user-phone" class="label form__label control__label label_dark">Телефон</label>
-            <input type="tel" class="input form__input control__input input_dark" id="user-phone" placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhone" class="input form__input control__input input_dark" id="user-phone" placeholder="Ваш номер телефона:">
           </div>
           
           <button class="button button_primary control__button">Отправить </button>
@@ -447,7 +447,7 @@
     </section>
     <!-- /.section design -->
     <section class="section steps section-steps">
-      <div class="container">
+      <div class="container steps-container">
         <div class="section-title section-title_left">
           <span class="section-title__work">как мы работаем</span>
           <h2 class="section-title__heading section-title__heading_primary section-title__heading_steps">6 шагов<span class="section-title__word">
@@ -622,6 +622,85 @@
       </div>
     </section>
     <!-- /.section steps -->
+    <section class="section section-team">
+      <div class="container team__container">
+        <div class="section-title">
+          <h2 class="section-title section-title__heading section-title__heading_team">Наша команда</h2>
+          <!-- /.section-title__heading -->
+          <div class="section-title__image section-title__image_team">
+            <img src="img/team/team.svg" alt="video">
+          </div>
+          <!-- /.section-title__image -->
+        </div>
+        <!-- section-title -->
+        <p class="section-title__text section-title__text_team">
+          Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться
+        </p>
+        <!-- /.section-title__description -->
+        <div class="row team__row">
+          <div class="col_30 team__col_30">
+            <div class="card team__card">
+              <div class="team__icon">
+                <img src="img/team/idea.svg" alt="">
+              </div>
+              <img src="img/team/one.png" alt="" class="team__image">
+              <div class="card__text team__text">
+                <h3 class="card__title team__title">Алексей Колмаков</h3>
+                <span class=" team__position">Проектный менеджер</span>
+                <strong class="card__pricetag team__pricetag">
+                  Опыт работы 8 лет
+                </strong>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col_30 team__col_30">
+            <div class="card team__card">
+              <div class="team__icon">
+                <img src="img/team/Group.svg" alt="">
+              </div>
+              <img src="img/team/two.png" alt="" class="team__image">
+              <div class="card__text team__text">
+                <h3 class="card__title team__title">Алиса Сухорукова</h3>
+                <span class=" team__position">Дизайнер</span>
+                <strong class="card__pricetag team__pricetag">
+                  Опыт работы 6 лет
+                </strong>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col_30 team__col_30">
+            <div class="card team__card">
+              <div class="team__icon">
+                <img src="img/team/portfolio.svg" alt="">
+              </div>
+              <img src="img/team/three.png" alt="" class="team__image">
+              <div class="card__text team__text">
+                <h3 class="card__title team__title">Давид Волынев</h3>
+                <span class=" team__position">Бригадир</span>
+                <strong class="card__pricetag team__pricetag">
+                  Опыт работы 7 лет
+                </strong>
+              </div>
+              <!-- /.card__text -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          
+        </div>
+        <!-- /.row -->
+        <p class="team__description">
+          Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет
+          гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.
+        </p>
+      </div>
+    </section>
   </main>
   <footer class="footer section_dark">
     <div class="container">
@@ -630,16 +709,16 @@
         <form action="#" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="user-name" class="label form__label label_light" id="user-name">Имя</label>
-            <input type="text"  class="input form__input footer__input input_light" placeholder="Как вас зовут:">
+            <input type="text" name="userName" class="input form__input footer__input input_light" placeholder="Как вас зовут:">
           </div>
           <div class="input-group footer__input-group">
             <label for="user-phone" class="label form__label label_light">Телефон</label>
-            <input type="tel"  class="input form__input footer__input input_light" id="user-phone" placeholder="Ваш номер телефона:">
+            <input type="tel" name="userPhone" class="input form__input footer__input input_light" id="user-phone" placeholder="Ваш номер телефона:">
           </div>
           
           <div class="input-group footer__input-group footer__input-group_full-width">
             <label for="user-question" class="label form__label label_light">Вопрос</label>
-            <input type="text"  class="input form__input footer__input input_light" id="user-question" placeholder="Я хочу спросить:">
+            <input type="text" name="userQuestion"  class="input form__input footer__input input_light" id="user-question" placeholder="Я хочу спросить:">
           </div>
           
           <div class="policy footer__policy">
