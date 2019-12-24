@@ -1536,6 +1536,7 @@ img {
   max-width: 63.07rem;
   margin: auto;
   padding: 2.5rem;
+  margin-bottom: 4rem;
 }
 
 .footer__title {
@@ -1560,6 +1561,10 @@ img {
           justify-content: space-between;
   max-width: 37rem;
   margin: auto;
+}
+
+.footer__map {
+  min-height: 465px;
 }
 
 .footer__input {
