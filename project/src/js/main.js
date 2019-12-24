@@ -258,7 +258,7 @@ $(document).ready(function () {
 
    ymaps.ready(function () {
      var myMap = new ymaps.Map('map', {
-         center: [55.751574, 37.573856],
+         center: [47.244734, 39.723227],
          zoom: 9
        }, {
          searchControlProvider: 'yandex#search'
