@@ -1,0 +1,223 @@
+[33mcommit 022dc076c514cd987a2fcf9be4e8473cc1826b03[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Wed Dec 11 22:18:18 2019 +0500
+
+    fixed: hero instagram,text and ff ss
+
+[33mcommit 04e6b7893254b787836282412a8947857d73f698[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Wed Dec 11 14:16:51 2019 +0500
+
+    fixed: header phone and button
+
+[33mcommit 07c60bfe5152f7115ba58410b3a7cec9d35d34c6[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Tue Dec 10 23:00:25 2019 +0500
+
+    feat: check from pixek perfect section header and hero
+
+[33mcommit 613ed83d4aa4e623a61d732cf9c16b0293bd6261[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Tue Dec 10 16:22:41 2019 +0500
+
+    refact:make responsive layout for header and hero
+
+[33mcommit f209c1109928fd69b5e19bf320d82f6c50bc36a6[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Sat Dec 7 16:11:30 2019 +0500
+
+    fixed: scroll down
+
+[33mcommit 07aa6c2aad9e3367524558250375ac7ffc1e3d28[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Sat Dec 7 15:41:17 2019 +0500
+
+    add: new section control and move settings, body setting
+
+[33mcommit fe0823cb7db2885bcf776e5780ae5c91de396e56[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Sat Dec 7 11:13:31 2019 +0500
+
+    feat:add hover effects section hero,and button_primary
+
+[33mcommit 140026b36d2deecb392907e103c83e10696e2645[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Fri Dec 6 23:34:29 2019 +0500
+
+    fixed: color hero__buttons
+
+[33mcommit 50d51243c2e7685184c29f7232e957e16acc7db0[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Fri Dec 6 22:09:50 2019 +0500
+
+    fixed: hero__buttons
+
+[33mcommit 5f7520566aef18901c943fbeffc94c0d4c4f10ed[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Fri Dec 6 21:42:29 2019 +0500
+
+    fixed: interface.sass buttons
+
+[33mcommit d50122c9aa7879fa1822dd470ab41f74c5d255cf[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Fri Dec 6 11:12:51 2019 +0500
+
+    fixed: container
+
+[33mcommit 48387d01ced42b8acd9f757655f8e1b6ff805300[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Fri Dec 6 11:11:44 2019 +0500
+
+    add:box-sizing:border-box for after,and before
+
+[33mcommit 9707df351c3d9f57c097dbc203dd79c6feb8eca3[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Fri Dec 6 11:06:36 2019 +0500
+
+    refact: header position,and fixed instagram button
+
+[33mcommit e299a80af6be354b47b013b7681ad9d67a573cbf[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Fri Dec 6 10:58:26 2019 +0500
+
+    add: intstagram button
+
+[33mcommit 88db66370c874798b38a40606d974be720230a10[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Fri Dec 6 09:51:31 2019 +0500
+
+    feat:add Futura Book and Futura Demi fonts
+
+[33mcommit ebf8005deeecb45c16674b5ae01f498e82cd0bc1[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Thu Dec 5 16:10:05 2019 +0500
+
+    fixed: style button and phone
+
+[33mcommit 9c2845893295455d27afca59bbbbd75463bca361[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Wed Dec 4 17:07:24 2019 +0500
+
+    feat: add normalize,interface,grid,variables,teamplape,header
+
+[33mcommit f113b8225f694378ce5788b25b34ea30b7ad26c2[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Tue Dec 3 19:43:53 2019 +0500
+
+    feat: add section hero in index.html
+
+[33mcommit ea32e60452cea66aaf8cb9bdf05b6c8c09d40e2d[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Tue Dec 3 19:15:06 2019 +0500
+
+    add header index.html
+
+[33mcommit 836976e456252a171556375d35b3ccae834180bd[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Tue Dec 3 14:27:17 2019 +0500
+
+    Исправил,теперь без создания папки, создается уменьшенный css файл
+
+[33mcommit 06ee2fdd8d9ce978e2f56c0a005d57fc8b55152d[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Tue Dec 3 14:25:46 2019 +0500
+
+    Создали таск для сжатия css файла
+
+[33mcommit d6c52944783a2fd154a0b7b85906c60badd5d73f[m
+Author: Ilyuz <wingeddeath62@gmail.com>
+Date:   Tue Dec 3 11:15:52 2019 +0500
+
+    Include gulp & make gulpfile.js
+
+[33mcommit df76730ff7eba9eb07c806fb5ee212888c8be54a[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Tue Dec 3 03:20:20 2019 +0500
+
+    Delete package-lock.json
+
+[33mcommit d457f695691de5ee901fe26dc97b07eeaea7490f[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Tue Dec 3 03:19:04 2019 +0500
+
+    Delete gulpfile.js
+
+[33mcommit 71a0047517386322aeb4d83449ac6baa83b72888[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Tue Dec 3 03:18:50 2019 +0500
+
+    Delete package.json
+
+[33mcommit 985e88f3f2edc8c1941754bbbb9c21232bbba3f8[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Tue Dec 3 03:18:21 2019 +0500
+
+    Delete .git-ignore
+
+[33mcommit 20389feb847ed294550d730060f6bbab47743b84[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Tue Dec 3 03:17:46 2019 +0500
+
+    Add files via upload
+    
+    Include gulp & make gulpfile.js
+
+[33mcommit 8dadb1bc9a79a13d2145e4f0f6e0869512a705e2[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 06:33:00 2019 +0500
+
+    Update index.html
+
+[33mcommit aa3e38d4b89735751cbc22add82c2111db5efc85[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 06:29:37 2019 +0500
+
+    Delete CNAME
+
+[33mcommit 7669617c1ca8310c2091b2f2fc3b4f337ec6538a[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 06:14:40 2019 +0500
+
+    Update CNAME
+
+[33mcommit 1a75be7661533a72f745d8572b3a944c8da8a50a[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 06:10:04 2019 +0500
+
+    Update CNAME
+
+[33mcommit 5a45cbbc78b7b8bef8db4c972b0bfa89e49cc871[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 06:09:04 2019 +0500
+
+    Update CNAME
+
+[33mcommit 0bd4a2e2742a5f8652c2509d59e1379cea238706[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 06:04:54 2019 +0500
+
+    Update CNAME
+
+[33mcommit 67c58e8b1b3467187089adc04b3ceab80c30e7f3[m[33m ([m[1;31morigin/wongobongo_github.io/repair_design[m[33m, [m[1;31morigin/http/wongobongo.github.io.repair-design[m[33m, [m[1;31morigin/http-/wongobongo_github.io._repair[m[33m)[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 05:46:52 2019 +0500
+
+    Update CNAME
+
+[33mcommit 2289f2902612efbcb5a5a0bfbb900a2299585f74[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 04:58:49 2019 +0500
+
+    Create CNAME
+
+[33mcommit f36a14da1a7a8bbd64ef6da42b7edff5a0239058[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 03:28:17 2019 +0500
+
+    Create index.html
+
+[33mcommit 1e359ee2744fc1f537dbf4c88e1cdcde7b07fecb[m
+Author: WongoBongo <49339391+WongoBongo@users.noreply.github.com>
+Date:   Sat Nov 30 02:23:19 2019 +0500
+
+    Initial commit
