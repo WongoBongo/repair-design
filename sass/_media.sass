@@ -65,12 +65,18 @@
       margin-bottom: 1.85rem
     &__scroll-down
       display: none 
+  .footer
+    background: $dark
+    &-wrap
+      position: static
+      width: auto
+      background: $dark
 @media screen and ( max-height: 530px )
   .hero
     &__scroll-down
       display: none
     
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 992px )
   .row
     flex-direction: column
     align-items: center
@@ -127,7 +133,7 @@
       
         
 
-@media screen and ( min-width: 760px )
+@media screen and ( min-width: 992px )
   .design
     background-color: $light
     
@@ -170,7 +176,7 @@
       max-width: 17px
         
 
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 992px )
   .control
     background: $dark
     color: $light
@@ -185,17 +191,27 @@
       color: #fff
 
 
-  .section-steps
+  .steps
     display: none
-
-
-
+  .footer
+    background: $dark
+    &-wrap
+      position: static
+    &__input
+      border-bottom: 1px solid $light
+    &__button
+      margin: 0
+      margin-top: 2.4rem
 
   .team
     &__container
       margin-top: 0
     &__description
       display: none
+    &__text
+      margin: 0 auto
+      margin-top: -6.5rem
+
   .team__col_30
     margin-bottom: 8rem
   .section-team
@@ -205,7 +221,10 @@
     display: none
 
   .footer
+    position: relative
     &__form
+  
+      
       max-width: 
       flex-direction: column
     &__input-group
@@ -213,8 +232,12 @@
       &_full-width
         margin-top: 0
     &__map
-      max-width: 340px
-
+      max-width: 450px
+      order: -1
+      margin-bottom: 3.9rem
+    &-menu
+      display: none
+  
 
 
 @media screen and ( max-width: 340px )
@@ -224,3 +247,13 @@
     padding: 0
     img
       display: none
+@media screen and ( max-width: 1296px )
+
+  
+  .steps
+    &__tabs
+      max-width: 560px
+      &-item
+        width: 8rem
+    &__swiper-slide-img
+      max-width: 60%

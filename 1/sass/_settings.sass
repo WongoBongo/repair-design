@@ -1,0 +1,108 @@
+*,*:before, *:after
+  box-sizing: border-box
+
+html
+  font-size: 14px
+
+body
+  font-family: 'Futura Book', sans-serif
+  font-size: 14px
+img
+  max-width: 100% 
+.section
+  padding: 60px 0
+  &_dark
+    background-color: $dark
+    color: $light
+  &-title
+    text-align: center
+    &_light
+      color: $light
+    &_left
+      text-align: left
+    &__text
+      font-size: 1.28rem;
+      line-height: 2.07rem;
+      &_projects
+         margin-top: 20px
+         max-width: 34.57rem
+         margin-right: 0
+      &_team
+        text-align: center
+        max-width: 36rem
+        margin: auto
+        margin-top: 0
+        margin-bottom: 6.3rem
+        color: $light
+        font-size: 1.43rem;
+        line-height: 2rem; 
+        font-style: normal;
+        font-weight: normal;
+      &_client
+        max-width: 30rem
+        color: $dark  
+        margin-bottom: 3.5rem
+         
+    &__heading
+      text-transform: uppercase
+      font-family: Yeseva One
+      font-size: 1.43rem
+      font-weight: normal
+      line-height: 2rem
+      margin-bottom: 0.85rem
+      &_primary
+        color: $primary
+        font-size: 1.93rem;
+        line-height: 2.64rem;
+        letter-spacing: -0.07em;
+        text-align: left
+      &_steps
+        margin-top: 15px
+        margin-bottom: 4rem
+      &_team
+        color: $light
+         
+        
+     
+    &__work
+      color: $light
+      font-weight: 500;
+      font-size: 15px;
+      
+      line-height: 21px;
+      text-transform: uppercase
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 92px
+        height: 1px
+        background-color: $primary
+        margin-left: 2rem
+    &__description
+      color: $light
+      margin: auto
+      margin-top: 1.64rem
+      margin-bottom: 2.8rem
+      font-size: 1.07rem
+      max-width: 24.86rem
+      line-height: 135.84%;
+      text-align: center
+      
+
+    &__image
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 2.14rem
+      &::before, &::after
+        content: ''
+        width: 32px
+        height: 2px
+        margin: 0 10px
+        background-color: $primary
+      &_team
+        margin-bottom: 1.5rem
+      
+    

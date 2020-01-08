@@ -1,53 +1,110 @@
 .steps
+  position: relative
+  padding-bottom: 35.71rem
   background-color: $dark
-  padding-bottom: 36rem
-
-  &-block
-    color: $light
+  &__heading
+    font-size: 1.929rem
+   
+  &__word
+    &::after
+      margin-left: 6.4rem
+  &__tabs
+    position: relative
+    list-style-type: none
     display: flex
-    flex-wrap: wrap
     justify-content: space-between
-    margin-bottom: 2rem
-    color:  darken(#ffffff, 68.24)
-
-    &__item
-      flex-basis: 28.4%
-      
-    &__number
+    flex-wrap: wrap
+    max-width: 54.52rem
+    margin-left: auto
+    margin-top: -1.2rem
+    padding: 0
+    z-index: 2
+    &-item  
+      width: 9.6rem      
+      opacity: 0.3
+      font-size: 1.07rem
+      margin-bottom: 2.9rem
+      cursor: pointer
+      margin-right: 11rem    
+      color: $light  
+      &:nth-child(3n)
+        margin-right: 0
+        width: 7.14rem
+    &-number
       font-family: 'Yeseva One', cursive
-      font-size: 1.08rem
-      line-height: 1.5rem
       text-transform: uppercase
       border-bottom: 1px solid $primary
-      max-width: 1.4rem
-    &__text
-      font-size: 1.1rem;
-      line-height: 1.4rem
+    &-text
+      display: block      
+      margin-top: 0.9rem
+      max-width: 24.07rem
+  &__swiper 
+    &-container
+      margin-top: -8.9rem   
+    &-slide
+      display: flex
+      justify-content: space-between
+      &-description
+        position: relative
+        max-width: 24.07rem
+      &-index
+        font-family: 'Yeseva One', cursive
+        font-size: 1.286rem 
+        line-height: 1.786rem
+        text-transform: uppercase 
+        color: $light
+      &-heading
+        max-width: 14rem
+        font-weight: normal
+        font-size: 1.07rem
+        margin-top: 1.5rem
+        color: $primary
 
-  
-    
+        &_penultimate
+          max-width: 16rem
+          
+      &-text
+        font-size: 1.07rem
+        line-height: 1.786rem
+        margin-top: 0.7rem
+        color: $light
+        max-width: 24.07rem
+      &-img
+        // width: 100%
+        max-width: 54.52rem
+        max-height: 27rem
+        margin-top: 8.64rem 
+        overflow: hidden
+        & img
+          maxwidth: 99%
+    &-pagination
+      width: auto !important
+      bottom: 6.9rem !important
+      & .swiper-pagination-bullet
+        background: rgba($light, 0.3)
+        width: 0.7rem
+        height: 0.7rem
+        margin: 0 9px !important
+        &-active
+          background: $light
+    &-button
+      &-prev, &-next
+        bottom: 6.9rem
+        top: auto
+        background-size: 42px
+        width: 42px
+        height: 14px
+        &::after
+          display: none
+      &-prev
+        background: url('../img/projects/arrow-left.svg') no-repeat center
+        left: 0
+      &-next
+        background: url('../img/projects/arrow-right.svg') no-repeat center 
+.active
+  opacity: 1
 
 
-.swiper
-  
-  &-container
-   
-  &-slide
-    &__number
-      font-family: Yeseva One
-      color: $light
-      font-size: 1.25rem
-    &__heading
-      &_steps
-        font-size: 15px;
-        line-height: 23px;
 
-    &__text
-      &_steps
-        flex-basis: 70%
-        
-    &__value
-      &_steps
-        font-size: 15px;
-        line-height: 25px
-        flex-basis: 80%
+
+

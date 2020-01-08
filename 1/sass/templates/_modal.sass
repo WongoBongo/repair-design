@@ -1,0 +1,122 @@
+.modal
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($dark,0.6 )
+  display: flex
+  align-items: center
+  justify-content: center
+  &_visible
+    opacity: 1
+    visibility: visible
+  
+  &__dialog
+    position: relative
+    max-width: 36.36rem
+    background: $dark  url('../img/bg-lines.svg') no-repeat center
+    padding: 2.36rem 3.5rem 1.928rem
+    color: $light
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+  &__title
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase
+    font-size: 1.357rem 
+    line-height: 26px
+    text-align: center
+    margin: 0
+    margin-top: 20px
+    margin-bottom: 2.428rem
+  &__form
+    display: flex
+    flex-direction: column
+  &__input
+    position: relative
+    &-group
+      display: flex
+      flex-direction: column
+      margin-bottom: 3.42rem
+    &:last-of-type
+      margin-bottom: 1.22rem
+  &__button
+    padding: 19px 40px
+    align-self: flex-end
+    margin-top: 58px
+  
+  &__policy
+    
+.window
+  opacity: 0
+  visibility: hidden
+  position: fixed
+  z-index: 200
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($dark,0.6 )
+  display: flex
+  align-items: center
+  justify-content: center
+  &_visible
+    opacity: 1
+    visibility: visible
+  
+  &__dialog
+    position: relative
+    max-width: 36.36rem
+    background: $dark  url('../img/bg-lines.svg') no-repeat center
+    padding: 2.36rem 3.5rem 1.928rem
+    color: $light
+    display: flex
+    flex-direction: column
+  &__close
+    position: absolute
+    right: 0
+    top: 0
+    width: 28px
+    height: 28px
+    background: transparent url('../img/close.svg') no-repeat center
+    border: none
+    margin: 12px
+    cursor: pointer
+  &__title
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase
+    font-size: 1.357rem 
+    line-height: 26px
+    text-align: center
+    margin: 0
+    margin-top: 20px
+    margin-bottom: 2.428rem
+ 
+
+  &__button
+    margin: 20px auto
+    padding: 13px 25px
+    border: none
+  &__link
+    text-decoration: none
+    color: $light
+    font-family: 'Yeseva One', cursive;
+    text-transform: uppercase
+    font-size: 1rem 
+    line-height: 20px
+    

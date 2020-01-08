@@ -1,0 +1,110 @@
+.button
+  padding: 11px 23px
+  border-radius: 2px
+  border: none
+  text-transform: uppercase
+  font-family: Futura Demi
+  font-weight: 500;
+  font-size: 0.93rem;
+  line-height: 15px;
+  &:hover
+      cursor: pointer
+  &_primary
+    background-color: $primary
+    box-shadow: 0px 5px 15px rgba($primary,0.2)
+    color: $light
+    transition: box-shadow 0.2s
+    &:hover
+      box-shadow: none
+  &_outline
+    border: 1px solid $light
+    background-color: transparent
+    color: $light
+
+.label
+  font-size: 1.07rem
+  &_light
+    color: rgba($light, 0.5);
+  &_dark
+    color: rgba($dark, 0.5) 
+
+
+.input
+  background-color: transparent
+  border: none
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3)
+  font-size: 1.285rem
+  color: $light
+  padding: 0.5rem 0
+  
+  &_light
+    &::placeholder
+      color: $light
+      font-weight: 500
+  &_dark
+    &::placeholder
+      color: $dark
+      font-size: 18px;
+      line-height: 24px;
+.policy
+  &__checkbox
+    
+    opacity: 0
+    visibility: hidden
+    &:checked +
+      .policy__label
+        &::before
+          
+          background: $primary url('../img/check.svg') no-repeat center / 0.8rem
+  &__label
+    display: flex
+    align-items: center
+    font-size: 1.142rem
+    &::before
+      content: ''
+      height: 18px
+      width: 18px
+      border: 1px solid $primary
+      border-radius: 2px
+      margin-right: 0.64rem
+      cursor: pointer
+    &_center
+      justify-content: center   
+
+.pageup 
+  display: none
+  position: fixed
+  bottom: 40px
+  right: 40px
+  width: 40px
+  height: 40px
+  background: orange
+  opacity: 0.6
+  border-radius: 50%
+  padding: 10px
+  transition: 0.3s
+  z-index: 10
+  &:hover
+    cursor: pointer
+    opacity: 1
+  img 
+      width: 100%
+
+.input-group
+  
+.invalid 
+  color: tomato; 
+  position: absolute;
+  margin-top: 4rem;
+input
+  &.invalid 
+   border-bottom: 1px solid tomato;
+   margin: 0
+
+
+
+      
+
+
+      
+
